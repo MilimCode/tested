@@ -1,7 +1,11 @@
 import os
 
+def clear_console():
+    os.system('cls' if os.name == 'nt' else 'clear')
+
 def number_guess_game():
     while True:
+        clear_console()
         print("============================================")
         print("Please make sure to check out my parser: https://github.com/MilimCode/Rule34-Image-Parser")
         print("============================================")
